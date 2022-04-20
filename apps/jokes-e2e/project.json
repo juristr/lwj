@@ -1,0 +1,28 @@
+{
+  "root": "apps/jokes-e2e",
+  "sourceRoot": "apps/jokes-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/jokes-e2e/cypress.json",
+        "devServerTarget": "jokes:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "jokes:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/jokes-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["jokes"]
+}
