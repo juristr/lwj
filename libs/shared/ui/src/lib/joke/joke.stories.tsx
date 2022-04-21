@@ -10,5 +10,6 @@ const Template: Story<JokeProps> = (args) => <Joke {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  joke: 'A kid threw a lump of cheddar at me',
+  setup: 'What’s Forrest Gump’s password?',
+  punchline: '1forrest1',
 };

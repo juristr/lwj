@@ -13,7 +13,7 @@
   border-radius: 1.5rem;
   box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px rgb(0 0 0 / 10%),
     0 4px 6px -2px rgb(0 0 0 / 5%);
-  padding: 2.5rem 2rem;
+  padding: 1.5rem 2rem;
   display: flex;
 }
 
@@ -21,10 +21,14 @@
   font-size: 3rem;
 }
 
-.container > .joke {
+.jokesContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+.jokesContainer > .joke {
   font-weight: 500;
   font-size: 1.25rem;
   letter-spacing: -0.025em;
-  line-height: 1.75rem;
-  padding-left: 1rem;
 }
