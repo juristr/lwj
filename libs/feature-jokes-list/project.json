@@ -1,0 +1,23 @@
+{
+  "root": "libs/feature-jokes-list",
+  "sourceRoot": "libs/feature-jokes-list/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/feature-jokes-list/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/feature-jokes-list"],
+      "options": {
+        "jestConfig": "libs/feature-jokes-list/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
