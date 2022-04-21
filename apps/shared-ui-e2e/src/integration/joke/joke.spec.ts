@@ -1,7 +1,9 @@
 describe('shared-ui: Joke component', () => {
-  beforeEach(() => cy.visit('/iframe.html?id=joke--primary'));
-    
-    it('should render the component', () => {
-      cy.get('h1').should('contain', 'Welcome to Joke!');
-    });
+  beforeEach(() =>
+    cy.visit('/iframe.html?id=joke--primary&args=joke:Some+odd+dad-joke')
+  );
+
+  it('should display the joke', () => {
+    cy.get('[data-testid="thejoke"]').should('contain', 'Some odd dad-joke');
+  });
 });

@@ -9,7 +9,9 @@ export function Joke(props: JokeProps) {
   return (
     <div className={styles['container']}>
       <div className={styles['emoji']}>🤪</div>
-      <h2 className={styles['joke']}>{props.joke}</h2>
+      <h2 data-testid="thejoke" className={styles['joke']}>
+        {props.joke}
+      </h2>
     </div>
   );
 }
