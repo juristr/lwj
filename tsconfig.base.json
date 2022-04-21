@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@lwj/feature-joke-of-the-day": [
+        "libs/feature-joke-of-the-day/src/index.ts"
+      ],
       "@lwj/shared/ui": ["libs/shared/ui/src/index.ts"]
     }
   },

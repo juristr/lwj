@@ -1,0 +1,25 @@
+{
+  "root": "libs/feature-joke-of-the-day",
+  "sourceRoot": "libs/feature-joke-of-the-day/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/feature-joke-of-the-day/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/feature-joke-of-the-day"],
+      "options": {
+        "jestConfig": "libs/feature-joke-of-the-day/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

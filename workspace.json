@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "feature-joke-of-the-day": "libs/feature-joke-of-the-day",
     "jokes": "apps/jokes",
     "jokes-e2e": "apps/jokes-e2e",
     "shared-ui": "libs/shared/ui",
