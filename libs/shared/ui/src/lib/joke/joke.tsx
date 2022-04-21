@@ -1,12 +1,15 @@
 import styles from './joke.module.css';
 
 /* eslint-disable-next-line */
-export interface JokeProps {}
+export interface JokeProps {
+  joke: string;
+}
 
 export function Joke(props: JokeProps) {
   return (
     <div className={styles['container']}>
-      <h1>Welcome to Joke!</h1>
+      <div className={styles['emoji']}>🤪</div>
+      <h2 className={styles['joke']}>{props.joke}</h2>
     </div>
   );
 }
