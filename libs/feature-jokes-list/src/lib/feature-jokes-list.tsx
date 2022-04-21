@@ -8,7 +8,7 @@ export interface FeatureJokesListProps {}
 export function FeatureJokesList(props: FeatureJokesListProps) {
   return (
     <div className={styles['container']}>
-      <h1>List of available Jokes</h1>
+      <h1>List of Jokes</h1>
       {JOKES.map((joke: JokeModel) => (
         <Joke
           setup={joke.setup}
