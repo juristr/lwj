@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "jokes": "apps/jokes",
-    "jokes-e2e": "apps/jokes-e2e"
+    "jokes-e2e": "apps/jokes-e2e",
+    "shared-ui": "libs/shared/ui"
   }
 }
