@@ -1,0 +1,32 @@
+{
+  "root": "libs/data-access-jokes",
+  "sourceRoot": "libs/data-access-jokes/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/data-access-jokes",
+        "main": "libs/data-access-jokes/src/index.ts",
+        "tsConfig": "libs/data-access-jokes/tsconfig.lib.json",
+        "assets": ["libs/data-access-jokes/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/data-access-jokes/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/data-access-jokes"],
+      "options": {
+        "jestConfig": "libs/data-access-jokes/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

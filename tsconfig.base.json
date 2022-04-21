@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@lwj/data-access-jokes": ["libs/data-access-jokes/src/index.ts"],
       "@lwj/feature-joke-of-the-day": [
         "libs/feature-joke-of-the-day/src/index.ts"
       ],

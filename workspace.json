@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "data-access-jokes": "libs/data-access-jokes",
     "feature-joke-of-the-day": "libs/feature-joke-of-the-day",
     "feature-jokes-list": "libs/feature-jokes-list",
     "jokes": "apps/jokes",

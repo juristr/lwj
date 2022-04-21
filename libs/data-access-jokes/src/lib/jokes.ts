@@ -5,7 +5,7 @@ export interface JokeModel {
 }
 
 // create an array of 10 jokes
-const JOKES: JokeModel[] = [
+export const JOKES: JokeModel[] = [
   {
     id: 1,
     setup: 'What did the cheese say when it looked in the mirror?',
@@ -57,11 +57,3 @@ const JOKES: JokeModel[] = [
     punchline: 'Ground beef',
   },
 ];
-
-// return a random joke from the jokes array
-export function getRandomJoke(): JokeModel {
-  const randomIndex = Math.floor(Math.random() * JOKES.length);
-
-  console.log('showing random joke', randomIndex);
-  return JOKES[randomIndex];
-}
