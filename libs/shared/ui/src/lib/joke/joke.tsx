@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './joke.module.css';
 
 /* eslint-disable-next-line */
@@ -11,7 +11,11 @@ export function Joke(props: JokeProps) {
   const [punchlineVisible, setPunchlineVisible] = useState(false);
 
   // set punchlineVisible after 2 seconds
-  setTimeout(() => setPunchlineVisible(true), 3000);
+  useEffect(() => {
+    setPunchlineVisible(false);
+    const timer = setTimeout(() => setPunchlineVisible(true), 3000);
+    return () => clearTimeout(timer);
+  }, [props.setup, props.punchline]);
 
   return (
     <div className={styles['container']}>
