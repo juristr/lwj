@@ -5,6 +5,8 @@
     "feature-joke-of-the-day": "libs/feature-joke-of-the-day",
     "feature-jokes-list": "libs/feature-jokes-list",
     "jokes": "apps/jokes",
+    "jokes-admin": "apps/jokes-admin",
+    "jokes-admin-e2e": "apps/jokes-admin-e2e",
     "jokes-e2e": "apps/jokes-e2e",
     "shared-ui": "libs/shared/ui",
     "shared-ui-e2e": "apps/shared-ui-e2e"
