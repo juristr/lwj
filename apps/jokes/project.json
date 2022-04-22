@@ -74,6 +74,14 @@
         "jestConfig": "apps/jokes/jest.config.js",
         "passWithNoTests": true
       }
+    },
+    "deploy": {
+      "executor": "@nrwl/workspace:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "npx netlify deploy --dir=.",
+        "cwd": "dist/apps/jokes"
+      }
     }
   },
   "tags": []
